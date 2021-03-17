@@ -1,0 +1,10 @@
+public class PostgresDB implements DB {
+
+    public void query(String sql) {
+        System.out.println("Querying" + sql + "In Postgres database");
+    }
+
+    public void update(String sql) {
+        System.out.println("Update Query" + sql + "In Postgres database");
+    }
+}

@@ -1,0 +1,9 @@
+public class Client {
+
+	public static void main(String[] args) {
+		DB db = new OracleFactory().getDatabase();
+		db.query("SELECT * FROM cars");
+		db.update("INSERT INTO cars VALUES ('Audi A3', 24)");
+
+	}
+}
