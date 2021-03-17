@@ -1,0 +1,7 @@
+public class PostgresFactory implements DBFactory {
+
+    @Override
+    public DB getDatabase() {
+        return new OracleDB();
+    }
+}
